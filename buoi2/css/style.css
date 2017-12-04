@@ -1,0 +1,11 @@
+body{
+    margin: 0px;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: #e5e5e5;
+    color: blue;
+    text-align: center;
+    font-family: Tahoma
+}
