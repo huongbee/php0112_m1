@@ -1,0 +1,19 @@
+.item img{
+    width: 70px;
+    height: 70px;
+    margin: 15px
+}
+
+.item{
+    width: 100px;
+    float: left;
+    border: 1px solid blue;
+    border-radius: 50%
+}
+
+.container{
+    width: 816px;
+}
+/* 
+đây là comment
+ */
