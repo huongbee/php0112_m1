@@ -8,11 +8,13 @@
     width: 100px;
     float: left;
     border: 1px solid blue;
-    border-radius: 50%
+    border-radius: 8px;
+    margin: 5px
 }
 
 .container{
-    width: 816px;
+    width: 896px;
+    margin: auto
 }
 /* 
 đây là comment
