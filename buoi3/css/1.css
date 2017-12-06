@@ -1,0 +1,42 @@
+.maudo{
+    width: 200px;
+    height: 200px;
+    background: red;
+    /* left: 50px;
+    top: 50px; */
+
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    z-index: 1
+
+
+}
+.mauxanh{
+    width: 250px;
+    height: 250px;
+    background: blue;
+    /* left: 150px;
+    top: 50px;
+    position: relative; */
+    top: 50px;
+    left: 50px;
+    position: absolute
+}
+.mautim{
+    width: 200px;
+    height: 200px;
+    background: violet;
+    /* position: fixed;
+    top: 100px;
+    right: 100px */
+
+    top: 100px;
+    left: 160px;
+    position: absolute;
+    z-index: 2
+}
+
+.mausac{
+    position: relative;
+}
