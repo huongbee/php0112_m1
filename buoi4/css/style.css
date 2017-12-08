@@ -1,0 +1,23 @@
+body{
+    background-color: #f3f3f3;
+    margin: 0px
+}
+.container{
+    width: 1200px
+}
+.menucha li{
+    float: left;
+    list-style-type: none;
+    padding: 15px 20px;
+    background-color: blue;
+    color: #fff;
+    text-transform: uppercase;
+    border-left: 2px solid #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.menucon{
+    display: none
+}
+li:hover .menucon{
+    display: block
+}
