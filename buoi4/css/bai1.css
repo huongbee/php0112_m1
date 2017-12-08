@@ -1,0 +1,19 @@
+.container{
+    width: 1000px;
+    margin: auto;
+}
+.sanpham{
+    width: 33.333333%;
+    float: left;
+}
+.hinh, .thongtin{
+    width: 50%;
+    float: left;
+}
+.hinh img{
+    width: 100%;
+}
+.tensanpham, .giasanpham{
+    width: 100%;
+    clear: both;
+}
