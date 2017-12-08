@@ -13,7 +13,14 @@ body{
     color: #fff;
     text-transform: uppercase;
     border-left: 2px solid #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 110px;
+    text-align: center
+}
+.menucha li:hover{
+    font-size: 18px;
+    background: #96d1ff;
+    color: #1d4463
 }
 .menucon{
     display: none;
@@ -33,7 +40,8 @@ li:hover .menucon{
     left: 10px;
     text-transform: none;
     background-color: #d7ffba;
-    color: blue
+    color: blue;
+    width: 130px;
 }
 .menucon li:hover{
     background-color: #ffffdb
