@@ -3,30 +3,41 @@ body{
     margin: 0px
 }
 .container{
-    width: 1200px
+    width: 1000px;
+    background-color: #ffffff;
+    margin: auto;
+    height: 1000px
+}
+.menucha{
+    width: 800px;
+    margin: 0 50px auto;
+    padding-top: 50px
 }
 .menucha li{
     float: left;
     list-style-type: none;
-    padding: 15px 20px;
+    line-height: 60px;
+    padding: 0px 20px 0px;
     background-color: blue;
     color: #fff;
     text-transform: uppercase;
     border-left: 2px solid #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 110px;
-    text-align: center
+    text-align: center;
 }
 .menucha li:hover{
     font-size: 18px;
     background: #96d1ff;
-    color: #1d4463
+    color: #1d4463;
+    padding-bottom: 0px
 }
 .menucon{
     display: none;
     padding-left: 0px;
-    margin-left: -30px;
-    margin-right: -10px;
+    margin-left: -20px;
+    margin-right: 13px;
+    margin-top: 10px;
 }
 li:hover .menucon{
     display: block
@@ -36,13 +47,14 @@ li:hover .menucon{
     border-left: none;
     border-bottom: 2px solid #fff;
     position: relative;
-    top:15px;
-    left: 10px;
+    top:2px;
+    left: 0px;
     text-transform: none;
     background-color: #d7ffba;
     color: blue;
-    width: 130px;
+    width: 140px;
 }
 .menucon li:hover{
-    background-color: #ffffdb
+    background-color: #ffffdb;
+    padding-bottom: 15px
 }
