@@ -46,13 +46,10 @@ body{
     .sanpham{
         width: 48%;
     }
-
     .container{
         width: 550px;
     }
-
 }
-
 @media (min-width:560px){
     .sanpham{
         width: 48%;
