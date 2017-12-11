@@ -35,3 +35,27 @@ body{
 .giasanpham{
     color: blue
 }
+
+@media screen and (max-width:1040px){
+    .container{
+        width: 900px;
+    }
+}
+
+@media (min-width:560px) and (max-width:1039px){
+    .sanpham{
+        width: 48%;
+    }
+
+    .container{
+        width: 550px;
+    }
+
+}
+
+@media (min-width:560px){
+    .sanpham{
+        width: 48%;
+    }
+    
+}
