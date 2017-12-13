@@ -18,12 +18,40 @@
     <hr>
 
     <img src="on.png" width="100px" id="imgLight">
+    <button onclick="turn()" id="btnTurn">Turn Off</button>
+    <!-- <button onclick="turnOff()">Turn Off</button>
+    <button onclick="turnOn()">Turn On</button> -->
     
-    <button onclick="turnOff()">Turn Off</button>
-    <button onclick="turnOn()">Turn On</button>
-    
+    <hr>
+    <input type="text" id="txtSoa" placeholder="Nhập số a" >
+    <br>
+    <input type="text" id="txtSoa" placeholder="Nhập số a" >
+    <br>
+    <button onclick="" id="btnTing">Tính tổng</button>
+    <br>
+    <input type="text" id="txtKQ" placeholder="Kết quả" readonly>
+    <br>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br>
 </body>
 <script>
+    // var num = document.getElementById('txtNumber').value
+    // alert(num)
+
+    function turn(){
+        var light = document.getElementById('imgLight')
+        var btn = document.getElementById('btnTurn').innerHTML
+        if(btn=='Turn Off'){
+            light.src = "off.png"
+            document.getElementById('btnTurn').innerHTML = "Turn On"
+        }
+        if(btn == 'Turn On'){
+            light.src ='on.png'
+            btn = document.getElementById('btnTurn').innerHTML = "Turn Off"
+        }
+    }
+
     function turnOff(){
         document.getElementById('imgLight').src = "off.png"
     }
@@ -44,7 +72,7 @@
    }
 
    function setNum(){
-       document.getElementById('txtNumber').value = 10
+       document.getElementById('txtNumber').value = 20
    }
 
     
