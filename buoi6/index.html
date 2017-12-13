@@ -14,11 +14,22 @@
     <button onclick="getText()">Get Text</button>
 
     <input type="text" value="10" id="txtNumber">
-
     <button onclick="setNum()">Incre</button>
+    <hr>
+
+    <img src="on.png" width="100px" id="imgLight">
+    
+    <button onclick="turnOff()">Turn Off</button>
+    <button onclick="turnOn()">Turn On</button>
     
 </body>
 <script>
+    function turnOff(){
+        document.getElementById('imgLight').src = "off.png"
+    }
+    function turnOn(){
+        document.getElementById('imgLight').src = "on.png"
+    }
    
    function tinhTong(){
        var a = 1;
@@ -33,7 +44,7 @@
    }
 
    function setNum(){
-       document.getElementById('txtNumber').value = 20
+       document.getElementById('txtNumber').value = 10
    }
 
     
