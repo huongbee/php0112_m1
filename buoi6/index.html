@@ -10,10 +10,34 @@
     <div id="container">
         Hello World!
     </div>
-    <button id="btnClickMe">Click Me!</button>
+    <button onclick="tinhTong()" >Click Me!</button>
+    <button onclick="getText()">Get Text</button>
+
+    <input type="text" value="10" id="txtNumber">
+
+    <button onclick="setNum()">Incre</button>
+    
 </body>
 <script>
-    var text = document.getElementById('container').innerHTML;
-    console.log(text)
+   
+   function tinhTong(){
+       var a = 1;
+       var b = 3;
+       var c = a+b;
+       alert(c)
+   }
+
+   function getText(){
+        var text = document.getElementById('container').innerHTML;
+        alert(text);
+   }
+
+   function setNum(){
+       document.getElementById('txtNumber').value = 20
+   }
+
+    
+    //console.log(text)
+    //alert(text);
 </script>
 </html>
