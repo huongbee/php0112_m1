@@ -25,9 +25,17 @@
     <hr>
     <input type="text" id="txtSoa" placeholder="Nhập số a" >
     <br>
-    <input type="text" id="txtSoa" placeholder="Nhập số a" >
+    <input type="text" id="txtSob" placeholder="Nhập số b" >
     <br>
-    <button onclick="" id="btnTing">Tính tổng</button>
+    Phép tính:
+    <select>
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select>
+    <br>
+    <button onclick="tinh()" id="btnTinh">Tính tổng</button>
     <br>
     <input type="text" id="txtKQ" placeholder="Kết quả" readonly>
     <br>
@@ -36,9 +44,19 @@
     <br><br><br><br><br><br><br><br><br><br><br>
 </body>
 <script>
-    // var num = document.getElementById('txtNumber').value
-    // alert(num)
 
+    function tinh(){
+        var soa = document.getElementById('txtSoa').value
+        var sob = document.getElementById('txtSob').value
+        if(isNaN(soa)){
+            alert('Vui lòng nhập số')
+            document.getElementById('txtSoa').focus()
+            return false;
+        }
+        var kq = parseInt(soa) + parseInt(sob)
+        document.getElementById('txtKQ').value = kq
+    }
+    
     function turn(){
         var light = document.getElementById('imgLight')
         var btn = document.getElementById('btnTurn').innerHTML
