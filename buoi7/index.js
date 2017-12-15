@@ -7,6 +7,16 @@ function calculator(){
     var soa = so_a.value;
     var sob = so_b.value;
     var kq = '';
+    if(isNaN(soa)){
+        alert('Vui lòng nhập a số');
+        so_a.focus();
+        return false;
+    }
+    if(isNaN(sob)){
+        alert('Vui lòng nhập b số');
+        so_b.focus();
+        return false;
+    }
     if(pt=="+"){
         kq = parseInt(soa)+parseInt(sob);
     }
@@ -19,7 +29,8 @@ function calculator(){
     else{ // chia
         if(sob == 0 ){
             alert('Vui lòng nhập số');
-            return
+            so_b.focus();
+            return 
         }
         kq = soa/sob;
     }
