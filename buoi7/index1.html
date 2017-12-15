@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txtSoa" placeholder="Nhập số thứ nhất">
+    <select id="txtPheptinh">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="text" id="txtSob" placeholder="Nhập số thứ hai">
+    <button id="btnCal">Tính</button>
+    <input type="text" id="txtKetqua" placeholder="Kết quả" readonly>
+</body>
+
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+
+    // function clickBTN(){
+    //     console.log(121)
+    // }
+
+    $(document).ready(function(){
+        // var a = $('#txtSoa').val(); // ~ var so_a = document.getElementById('txtSoa').value
+        // console.log(a)
+        $('#btnCal').click(function(){
+            //console.log(121)
+            var a = $('#txtSoa').val();
+            var b = $('#txtSob').val();
+            var pt = $('#txtPheptinh').val();
+            if(isNaN(a)){
+                alert('Vui lòng nhâp a là số');
+                $('#txtSoa').focus();
+                return;
+            }
+            if(isNaN(b)){
+                alert('Vui lòng nhâp b là số');
+                $('#txtSob').focus();
+                return;
+            }
+            if(pt=="+"){
+                kq = parseInt(a)+parseInt(b);
+            }
+            else if(pt=='-'){
+                kq = a-b;
+            }
+            else if(pt=='*'){
+                kq = a*b;
+            }
+            else{ // chia
+                if(b == 0 ){
+                    alert('Vui lòng nhập số');
+                    $('#txtSob').focus();
+                    return 
+                }
+                kq = a/b;
+            }
+            $('#txtKetqua').val(kq)
+        })
+
+
+    })
+
+
+</script>
+
+</html>
