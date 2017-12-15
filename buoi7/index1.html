@@ -17,6 +17,16 @@
     <input type="text" id="txtSob" placeholder="Nhập số thứ hai">
     <button id="btnCal">Tính</button>
     <input type="text" id="txtKetqua" placeholder="Kết quả" readonly>
+    <hr>
+    <div class="content">
+        Hello jQuery
+    </div>
+    <button class="btnClick">Click Me!</button>
+    <hr>
+    <div class="content-2">
+        <h2>Hello jQuery</h2>
+    </div>
+    <button class="btnClick-2">Click Me 2!</button>
 </body>
 
 <script src="jquery-3.2.1.min.js"></script>
@@ -25,7 +35,6 @@
     // function clickBTN(){
     //     console.log(121)
     // }
-
     $(document).ready(function(){
         // var a = $('#txtSoa').val(); // ~ var so_a = document.getElementById('txtSoa').value
         // console.log(a)
@@ -62,6 +71,13 @@
                 kq = a/b;
             }
             $('#txtKetqua').val(kq)
+        })
+
+        $('.btnClick').click(function(){
+            // var t = $('.content').text();
+            // alert(t)
+            $('.content').text("Chào các bạn");
+            
         })
 
 
