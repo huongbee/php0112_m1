@@ -25,6 +25,7 @@
     <hr>
     <div class="content-2">
         <h2>Hello jQuery</h2>
+        <h2>Hello jQuery</h2>
     </div>
     <button class="btnClick-2">Click Me 2!</button>
 </body>
@@ -80,6 +81,12 @@
             
         })
 
+        $('.btnClick-2').click(function(){
+            // var t = $('.content-2').html();
+            // console.log(t)
+
+            $('.content-2').text("<h2>Chào các bạn</h2>");
+        })
 
     })
 
