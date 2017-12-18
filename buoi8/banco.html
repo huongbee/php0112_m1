@@ -42,12 +42,18 @@
 
         var flag = true
         $('.oco').click(function () {
-            if (flag) {
-                $(this).html('X')
+            if ($(this).html() == "") {
+                if (flag) {
+                    $(this).html('X')
+                } else {
+                    $(this).html('O')
+                }
+                flag = !flag
+
             } else {
-                $(this).html('O')
+                alert("Can't check this again!")
             }
-            flag = !flag
+
         })
 
     })
