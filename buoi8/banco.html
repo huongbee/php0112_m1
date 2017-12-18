@@ -10,47 +10,32 @@
 
 <body>
     <div class="banco">
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
+
     </div>
 </body>
 <script src="jquery-3.2.1.min.js"></script>
 <script>
     $(document).ready(function () {
+        for (var i = 1; i <= 400; i++) {
+            $('.banco').append('<div class="oco"></div>')
+        }
         $('.banco').css("width", "440px")
         $('.oco').css({
             "width": "20px",
             "height": "20px",
             "border": "1px solid #5342f4",
-            "float": "left"
+            "float": "left",
+            "backgroundColor": "#b8efe4"
+        })
+        $('.oco').mouseover(function () {
+            $(this).css({
+                "backgroundColor": "#f5f7b4"
+            })
+        })
+        $('.oco').mouseout(function () {
+            $(this).css({
+                "backgroundColor": "#b8efe4"
+            })
         })
     })
 </script>
