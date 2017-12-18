@@ -25,7 +25,9 @@
             "height": "20px",
             "border": "1px solid #5342f4",
             "float": "left",
-            "backgroundColor": "#b8efe4"
+            "backgroundColor": "#b8efe4",
+            "textAlign": "center",
+            "color": "blue"
         })
         $('.oco').mouseover(function () {
             $(this).css({
@@ -37,6 +39,17 @@
                 "backgroundColor": "#b8efe4"
             })
         })
+
+        var flag = true
+        $('.oco').click(function () {
+            if (flag) {
+                $(this).html('X')
+            } else {
+                $(this).html('O')
+            }
+            flag = !flag
+        })
+
     })
 </script>
 
