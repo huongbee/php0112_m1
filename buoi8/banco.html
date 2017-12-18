@@ -7,15 +7,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<style>
+    .banco-2 {
+        border: 5px dotted #e5de5e;
+        height: 440px
+    }
+</style>
 
 <body>
-    <div class="banco">
+    <div class="banco banco-2" dataID="3434">
 
     </div>
+    <button type="button" id="add">Add Class</button>
 </body>
 <script src="jquery-3.2.1.min.js"></script>
 <script>
     $(document).ready(function () {
+        $('#add').click(function () {
+            // $('.banco').addClass('banco-2')
+            $('.banco').removeClass('banco-2')
+        })
+
+        //get data
+        // var data = $('.banco').attr('dataID');
+        // console.log(data)
+
+        //set data
+        $('.banco').attr('dataID', 2345678);
+
+
+
         for (var i = 1; i <= 400; i++) {
             $('.banco').append('<div class="oco"></div>')
         }
@@ -55,6 +76,7 @@
             }
 
         })
+
 
     })
 </script>
